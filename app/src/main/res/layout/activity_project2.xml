@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivrocket"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/launch"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/sta"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_toStartOf="@id/ivrocket"
+        android:src="@drawable/satellite"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/rover"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/marsrover"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@id/ivrocket"
+        android:layout_marginStart="50dp"
+        android:contentDescription="@string/todo" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ivrocket"
+        android:layout_marginStart="-48dp"
+        android:layout_marginBottom="-29dp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/ivrocket"
+        android:text="Flight"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/sta"
+        android:layout_marginStart="-200dp"
+        android:layout_marginBottom="-28dp"
+        android:layout_toEndOf="@id/ivrocket"
+        android:text="Space Station"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/rover"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="-29dp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/ivrocket"
+        android:text="Rover"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:layout_width="143dp"
+        android:layout_height="87dp"
+        android:layout_alignBottom="@id/sta"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="-22dp"
+        android:layout_marginBottom="-172dp"
+        android:layout_toStartOf="@id/Center"
+        android:background="#FFC107"
+        android:paddingTop="20dp"
+        android:text="DCA"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="143dp"
+        android:layout_height="87dp"
+        android:layout_alignBottom="@id/rover"
+        android:layout_marginStart="-12dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="-172dp"
+        android:layout_toEndOf="@id/Center"
+        android:background="#F44336"
+        android:paddingTop="20dp"
+        android:text="MARS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+
+        android:id="@+id/Center"
+        android:layout_width="112dp"
+        android:layout_height="152dp"
+        android:layout_alignBottom="@id/ivrocket"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-203dp"
+        android:contentDescription="TODO"
+        android:background="@color/white"
+        android:src="@drawable/squareshapeoutline"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+
+    <ImageView
+        android:layout_width="234dp"
+        android:layout_height="78dp"
+        android:layout_alignBottom="@id/ivrocket"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="-172dp"
+        android:layout_marginBottom="-166dp"
+        android:layout_toStartOf="@id/Center"
+        android:contentDescription="TODO"
+        android:src="@drawable/oppositearrows"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One Way"
+        android:layout_alignBottom="@id/Center"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:paddingStart="5dp"
+        android:textSize="30sp"
+        android:layout_marginBottom="-100dp"
+        android:textColor="@color/black"
+        android:id="@+id/OneWay"
+        android:background="#3F51B5"
+        tools:ignore="HardcodedText,RtlSymmetry" />
+   <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingStart="10dp"
+        android:layout_marginBottom="-100dp"
+        android:layout_alignBottom="@id/Center"
+        android:layout_marginTop="10dp"
+        android:background="#3F51B5"
+        android:layout_toEndOf="@+id/OneWay"
+        tools:ignore="RtlSymmetry,UseSwitchCompatOrMaterialXml" />
+
+
+
+    <TextView
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-70dp"
+        android:background="#009688"
+        android:text="Traveller"
+        android:layout_marginStart="10dp"
+        android:paddingStart="5dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_alignBottom="@id/OneWay"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText,RtlSymmetry" />
+
+
+
+</RelativeLayout>
